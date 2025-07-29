@@ -18,27 +18,18 @@
       embedded
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
       vr-mode-ui="enabled: false "
-    ></a-scene>
+    >
+      <a-entity camera></a-entity>
 
-    <a-marker preset="hiro">
-      <a-entity
-        id="dino"
-        position="0 0 0"
-        scale="0.05 0.05 0.05"
-        gltf-model="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/examples/image-tracking/nft/trex/scene.gltf"
-      ></a-entity>
-    </a-marker>
-
-    <a-entity camera></a-entity>
-
-    <a-marker preset="hiro">
-      <a-entity
-        id="dragon"
-        position="0 -1 -2"
-        scale="0.01 0.01 0.01"
-        gltf-model="https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models@master/2.0/DragonAttenuationTest/glTF/DragonAttenuationTest.gltf"
-      >
-      </a-entity>
-    </a-marker>
+      <a-marker preset="hiro">
+        <a-entity
+          id="dragon"
+          position="0 -1 -2"
+          scale="0.01 0.01 0.01"
+          gltf-model="https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models@master/2.0/DragonAttenuationTest/glTF/DragonAttenuationTest.gltf"
+        >
+        </a-entity>
+      </a-marker>
+    </a-scene>
   </body>
 </html>
